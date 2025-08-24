@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Creative Video & Social Media Agency</title>
+    <meta name="description" content="Professional video editing and social media marketing services. Specializing in short-form videos, gaming content, eCommerce ads, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Editkaro.in</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Creative Video Editing</h1>
+                <p class="hero-subtitle">Transforming ideas into compelling visual stories</p>
+                <div class="hero-cta">
+                    <a href="#work" class="cta-button">View Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Explore our diverse range of creative work</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <!-- Desktop Button Filters -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Work</button>
+                    <button class="filter-btn" data-category="short-form">Short Form</button>
+                    <button class="filter-btn" data-category="long-form">Long Form</button>
+                    <button class="filter-btn" data-category="gaming">Gaming</button>
+                    <button class="filter-btn" data-category="football">Football Edits</button>
+                    <button class="filter-btn" data-category="ecommerce">eCommerce Ads</button>
+                    <button class="filter-btn" data-category="documentary">Documentary</button>
+                    <button class="filter-btn" data-category="color-grading">Color Grading</button>
+                    <button class="filter-btn" data-category="anime">Anime</button>
+                </div>
+                
+                <!-- Mobile Dropdown Filter -->
+                <div class="filter-dropdown">
+                    <select id="categorySelect" class="category-select">
+                        <option value="all">All Work</option>
+                        <option value="short-form">Short Form</option>
+                        <option value="long-form">Long Form</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="football">Football Edits</option>
+                        <option value="ecommerce">eCommerce Ads</option>
+                        <option value="documentary">Documentary</option>
+                        <option value="color-grading">Color Grading</option>
+                        <option value="anime">Anime</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Short Form Videos -->
+                <div class="portfolio-item" data-category="short-form">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Short Form Video">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">TikTok Style Edit</h3>
+                            <p class="item-category">Short Form Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long Form Videos -->
+                <div class="portfolio-item" data-category="long-form">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Long Form Video">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Documentary Series</h3>
+                            <p class="item-category">Long Form Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaming Videos -->
+                <div class="portfolio-item" data-category="gaming">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop" alt="Gaming Video">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Gaming Highlights</h3>
+                            <p class="item-category">Gaming Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Football Edits -->
+                <div class="portfolio-item" data-category="football">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Football Edit">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Match Highlights</h3>
+                            <p class="item-category">Football Edit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eCommerce Ads -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="eCommerce Ad">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Product Showcase</h3>
+                            <p class="item-category">eCommerce Ad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentary Style -->
+                <div class="portfolio-item" data-category="documentary">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Documentary">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Behind the Scenes</h3>
+                            <p class="item-category">Documentary Style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Grading -->
+                <div class="portfolio-item" data-category="color-grading">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Color Grading">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Cinematic Look</h3>
+                            <p class="item-category">Color Grading</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anime Videos -->
+                <div class="portfolio-item" data-category="anime">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop" alt="Anime Video">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Anime Edit</h3>
+                            <p class="item-category">Anime Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ads -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="item-content">
+                        <div class="item-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="Advertisement">
+                            <div class="item-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-title">Brand Campaign</h3>
+                            <p class="item-category">Advertisement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Editkaro.in</h2>
+                    <p class="about-description">
+                        We are a passionate team of creative professionals specializing in video editing and social media marketing. 
+                        Our mission is to transform your ideas into compelling visual stories that engage and inspire your audience.
+                    </p>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <i class="fas fa-video"></i>
+                            <h3>Video Editing</h3>
+                            <p>Professional editing for all types of content</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-share-alt"></i>
+                            <h3>Social Media</h3>
+                            <p>Strategic marketing for digital platforms</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-palette"></i>
+                            <h3>Color Grading</h3>
+                            <p>Cinematic color correction and grading</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@editkaro.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Lightbox -->
+    <div class="video-lightbox" id="videoLightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <h3 class="lightbox-title">Video Title</h3>
+                <button class="close-btn" id="closeLightbox">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Editkaro.in</span>
+                    <p>Creative video editing and social media marketing</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
